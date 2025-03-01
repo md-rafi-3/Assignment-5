@@ -19,10 +19,10 @@
     </style>
 </head>
 
-<body class="mx-auto max-w-7xl">
+<body id="body" class="">
 
-    <header class="">
-       <nav class="flex items-center justify-between p-4 mt-2 rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15">
+    <header class="mx-auto max-w-7xl">
+       <nav class="flex items-center justify-between p-4  rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15">
         <div class="flex items-center justify-center gap-2 ">
             <img class="max-w-10" src="assets/logo.png" alt="">
 
@@ -34,14 +34,14 @@
                 <img class="max-w-6" src="assets/checkbox.png" alt="">
             <h1 class="text-xl font-bold">23</h1>
             </div>
-            <button><img class="max-w-8" src="assets/theme-btn.png" alt=""></button>
+            <button id="theme-btn"><img class="max-w-8" src="assets/theme-btn.png" alt=""></button>
         </div>
 
         
        </nav>
     </header>
     
-    <main class="flex gap-4 mt-5 ">
+    <main class="flex gap-4 mx-auto mt-5 max-w-7xl">
         <section class="max-w-[970px] p-6 rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15">
            <!-- 1st container -->
             <div class="grid grid-cols-[225px_455px_225px] gap-3">
@@ -305,5 +305,6 @@
     
     
     <script src="scripts/script.js"></script>
+    <script src="scripts/theme.js"></script>
 </body>
 </html>
