@@ -29,7 +29,12 @@ for(let i = 0; i<buttons.length;i++){
              
     })
     
-}
+};
+
+
+document.getElementById('new-window').addEventListener('click',function(){
+    window.location.href = 'blog.html';
+})
 
 
 
