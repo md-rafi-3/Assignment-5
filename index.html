@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dev Board</title>
+
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="mx-auto max-w-7xl">
+
+    <header class="">
+       <nav class="flex items-center justify-between p-4 mt-2 rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15">
+        <div class="flex items-center justify-center gap-2 ">
+            <img class="max-w-10" src="assets/logo.png" alt="">
+
+            <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1> 
+        </div>
+
+        <div class="flex items-center gap-6 ">
+            <div class="flex items-center justify-center gap-2 bg-[#f4f7ff]  p-3 rounded-2xl">
+                <img class="max-w-6" src="assets/checkbox.png" alt="">
+            <h1 class="text-xl font-bold">23</h1>
+            </div>
+            <button><img class="max-w-8" src="assets/theme-btn.png" alt=""></button>
+        </div>
+
+        
+       </nav>
+    </header>
+    
+    <main class="flex gap-4 mt-5 ">
+        <section class="max-w-[970px] p-6 rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15">
+           <!-- 1st container -->
+            <div class="grid grid-cols-[225px_455px_225px] gap-3">
+                <!-- 1st -->
+                <div class="bg-[#f4f7ff] flex max-w-[235px] p-4 justify-center items-center gap-2 rounded-xl">
+                    <div class="p-4 bg-white rounded-full">
+                        <img class="max-w-6" src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-base font-medium">Task Assigned</p>
+                        <h1 class="text-2xl font-bold">06</h1>
+                    </div>
+                </div>
+                    <!-- 2nd -->
+                      <div class="flex max-w-[464px] bg-gradient-to-r from-[#3752fd] to-[#9ba8f8] p-4  items-center gap-2 rounded-xl">
+                      
+                        <img class="max-w-14" src="assets/board.png" alt="">
+                       
+                        
+                            <div>
+                                <p class="text-2xl font-medium text-white">Discover Something</p>
+                                <p class="text-2xl font-medium text-white"> New Today!</p>
+                            </div>
+                        
+                      </div>
+                      <!-- 3rd -->
+                       <div class="bg-[#f4f7ff] flex max-w-[235px] justify-center items-center gap-2 p-4 rounded-xl">
+                       <div class="p-4 bg-white rounded-full">
+                        <img class="max-w-6" src="assets/calender.png" alt="">
+                       </div>
+                        <div>
+                            <h1 id="week-display" class="text-xl font-medium"></h1>
+                            <h1 class="text-xl font-bold"><span id="month-display"></span>&nbsp;<span id="date-display"></span>&nbsp; <span id="year-display"></span></h1>
+                        </div>
+                       </div>
+                
+            </div>
+            <!-- container end -->
+             <!-- main task container -->
+            <div class="grid mt-10 grid-cols-[300px_300px_300px] gap-4">
+                <!-- 1st -->
+                <div class=" shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c] ">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                <!-- 2nd -->
+                 
+                <div class=" shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c]">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                  <!-- 3rd -->
+                  <div class=" shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c]">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                  <!-- 4th -->
+                  <div class=" shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c]">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                  <!-- 5th -->
+                  <div class=" shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c]">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                  <!-- 6th -->
+                  <div class="shadow-sm card bg-[#f4f7ff] max-w-[300px]">
+                    
+                    <div class="card-body">
+                       <div class="px-4 py-2 bg-white rounded-md w-fit">
+                        <p class="text-xl font-normal">ShopEase</p>
+                       </div>
+                      <h2 class=" card-title">Fix Mobile Button Issue </h2>
+                     
+                      <div class="p-3 bg-white rounded-md">
+                        
+                  <details class="text-base font-normal text-black opacity-50">
+                    <summary> Debug using Chrome DevTools, check for overlapping... </summary>
+                    <p>
+                        elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                    </p>
+                  </details>
+                    
+                      </div>
+                      
+                      <div class="flex items-center justify-between mt-2">
+                        <div>
+                            <p class="text-[#00303c] text-sm font-normal">Deadline</p>
+                            <h1 class="text-base font-medium text-[#00303c]">21 March 2025</h1>
+                        </div>
+                        
+                            <button class="text-base font-medium btn btn-primary">Complete</button>
+                          
+                    </div>
+                  
+                    </div>
+                  </div>
+                  <!-- end -->
+            </div>
+            
+            <!-- conrtainer end -->
+        </section>
+        
+        <section class="w-[294px]  rounded-2xl box-border  bg-white  border-[#080808] box  border border-opacity-15 ">
+           
+            <div class="p-6">
+                <div class="flex items-center justify-center gap-2">
+                    <img src="assets/activity.png" alt="">
+                    <h1 class="text-xl font-medium">Activity Log</h1>
+                </div>
+                <div class="flex justify-center mt-3">
+                    <button class="text-base font-medium btn btn-primary">Clear History</button>
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+    
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
