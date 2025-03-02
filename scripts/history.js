@@ -114,7 +114,7 @@ document.getElementById('job-btn').addEventListener('click',function(){
 });
 
 document.getElementById('clear').addEventListener('click',function(){
-    document.getElementById('main-container').classList.add('hidden');
+    document.getElementById('main-container').innerHTML='';
 });
 
 

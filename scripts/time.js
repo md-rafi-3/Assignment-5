@@ -21,6 +21,9 @@ function getTime (){
     if(minute < 10){
         minute='0'+minute;
     }
+    if(secound < 10){
+        secound='0'+secound;
+    }
 
     if(hours>=12){
         amPm='PM'
