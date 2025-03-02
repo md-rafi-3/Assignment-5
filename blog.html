@@ -9,8 +9,32 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
     <title>Blog</title>
+    
+    <style>
+        body{
+            font-family: "Tiro Bangla", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        h1{
+            font-family: "Tiro Bangla", serif;
+         font-weight: 400;
+        }
+        
+        .title{
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .summary{
+            font-weight: 700;
+        }
+       
+    </style>
 </head>
 <body>
     <header class="pt-3 mx-auto max-w-7xl">
@@ -34,7 +58,56 @@
             <h1 class="text-xl font-semibold ">Question-1: What are the different ways to select an element in the DOM?</h1>
            </div>
             
-            <p class="mt-2 text-lg font-normal text-black opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum optio ea illo! Impedit minima quo inventore, ducimus ea deserunt ipsam eligendi sint iste error dolore modi provident harum molestias consectetur officiis accusantium repudiandae animi vel ab ratione? Ut ratione dolorem, sint impedit rerum id ex natus obcaecati architecto et!</p>
+            <p class="title">
+                DOM থেকে এলিমেন্ট সিলেক্ট করার বিভিন্ন উপায়:
+            </p>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">getElementById()</summary>
+                <p>
+                    এটি নির্দিষ্ট ID দিয়ে একটি এলিমেন্ট কে সিলেক্ট করে
+                </p>
+              </details>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">getElementByClassName</summary>
+                <p>
+                    এটি দিয়ে একই ক্লাসের সব এলিমেন্ট কে সিলেক্ট করা যায় 
+                </p>
+              </details>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">getElementByTagName</summary>
+                <p>
+                    এটি দিয়ে নির্দিষ্ট কোন Tag এর নাম ব্যবহার করে সব এলিমেন্ট কে সিলেক্ট করা যায় 
+                </p>
+              </details>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">getElementByName()</summary>
+                <p>
+                    এটি দিয়ে name Attributeব্যবহার করে এলিমেন্ট সিলেক্ট করা যায় 
+                </p>
+              </details>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">querySelector()</summary>
+                <p>
+                    এটি CSS সিলেক্টর ব্যবহার করে প্রথম মিলে যাওয়া এলিমেন্ট সিলেক্ট করে 
+                </p>
+              </details>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">querySelectorAll()</summary>
+                <p>
+                    এটি CSS সিলেক্টর ব্যবহার করে সব মিল থাকা এলিমেন্ট সিলেক্ট করে 
+                </p>
+              </details>
+            
+            
+                
+            
+            
         </div>
         
         <!-- 2nd -->
@@ -43,7 +116,18 @@
                 <h1 class="text-xl font-semibold ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
                </div>
                
-            <p class="mt-2 text-lg font-normal text-black opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum optio ea illo! Impedit minima quo inventore, ducimus ea deserunt ipsam eligendi sint iste error dolore modi provident harum molestias consectetur officiis accusantium repudiandae animi vel ab ratione? Ut ratione dolorem, sint impedit rerum id ex natus obcaecati architecto et!</p>
+            <p class="title">
+                innerHTML,innerText এবং textContent এর মধ্যে পার্থক্য হলো:
+            </p>
+            <p class="text-base font-normal text-black opacity-50">
+                <span class="text-lg font-semibold">innerHTML :</span>এটি ব্যবহার করে একটি এলিমেন্টের সম্পূর্ণ HTML কোড পরিবর্তন করা যায় 
+            </p>
+            <p class="text-base font-normal text-black opacity-50">
+                <span class="text-lg font-semibold">innerText : </span>এটি  ব্যবহার করে একটি এলিমেন্টের দৃশ্যমান টেস্ট এর এক্সেস নেওয়া যায় যা দিয়ে দৃশ্যমান text পরিবর্তন করা যায় এটি হিডেন টেস্ট এর এক্সেস নিতে পারেনা
+            </p>
+            <p class="text-base font-normal text-black opacity-50">
+                <span class="text-lg font-semibold">textContent :</span>এর কাজ innerText মতোই কিন্তু এটি  দৃশ্যমান text পাশাপাশি  hidden text এর এক্সেস নিতে পারে 
+            </p>
         </div>
         
         <!-- 3rd -->
