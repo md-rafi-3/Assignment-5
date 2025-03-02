@@ -26,10 +26,10 @@ function getTime (){
     }
 
     if(hours>=12){
-        amPm='PM'
+        amPm='AM'
     }
     else {
-        amPm = 'AM'
+        amPm = 'PM'
     }
     
     const finalTime = hours +':'+minute+':'+secound +' '+amPm;
