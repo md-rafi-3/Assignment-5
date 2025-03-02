@@ -28,6 +28,7 @@
             padding-top: 10px;
             font-size: 18px;
             font-weight: 700;
+            opacity: 0.7;
         }
         
         .summary{
@@ -65,42 +66,42 @@
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">getElementById()</summary>
                 <p>
-                    এটি নির্দিষ্ট ID দিয়ে একটি এলিমেন্ট কে সিলেক্ট করে
+                    এটি নির্দিষ্ট ID দিয়ে একটি এলিমেন্ট কে সিলেক্ট করে।
                 </p>
               </details>
             
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">getElementByClassName</summary>
                 <p>
-                    এটি দিয়ে একই ক্লাসের সব এলিমেন্ট কে সিলেক্ট করা যায় 
+                    এটি দিয়ে একই ক্লাসের সব এলিমেন্ট কে সিলেক্ট করা যায়।
                 </p>
               </details>
             
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">getElementByTagName</summary>
                 <p>
-                    এটি দিয়ে নির্দিষ্ট কোন Tag এর নাম ব্যবহার করে সব এলিমেন্ট কে সিলেক্ট করা যায় 
+                    এটি দিয়ে নির্দিষ্ট কোন Tag এর নাম ব্যবহার করে সব এলিমেন্ট কে সিলেক্ট করা যায়। 
                 </p>
               </details>
             
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">getElementByName()</summary>
                 <p>
-                    এটি দিয়ে name Attributeব্যবহার করে এলিমেন্ট সিলেক্ট করা যায় 
+                    এটি দিয়ে name Attributeব্যবহার করে এলিমেন্ট সিলেক্ট করা যায়।
                 </p>
               </details>
             
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">querySelector()</summary>
                 <p>
-                    এটি CSS সিলেক্টর ব্যবহার করে প্রথম মিলে যাওয়া এলিমেন্ট সিলেক্ট করে 
+                    এটি CSS সিলেক্টর ব্যবহার করে প্রথম মিলে যাওয়া এলিমেন্ট সিলেক্ট করে।
                 </p>
               </details>
             
             <details class="text-base font-normal text-black opacity-50">
                 <summary class="summary">querySelectorAll()</summary>
                 <p>
-                    এটি CSS সিলেক্টর ব্যবহার করে সব মিল থাকা এলিমেন্ট সিলেক্ট করে 
+                    এটি CSS সিলেক্টর ব্যবহার করে সব মিল থাকা এলিমেন্ট সিলেক্ট করে। 
                 </p>
               </details>
             
@@ -120,13 +121,13 @@
                 innerHTML,innerText এবং textContent এর মধ্যে পার্থক্য হলো:
             </p>
             <p class="text-base font-normal text-black opacity-50">
-                <span class="text-lg font-semibold">innerHTML :</span>এটি ব্যবহার করে একটি এলিমেন্টের সম্পূর্ণ HTML কোড পরিবর্তন করা যায় 
+                <span class="text-lg font-semibold">innerHTML :</span>এটি ব্যবহার করে একটি এলিমেন্টের সম্পূর্ণ HTML কোড পরিবর্তন করা যায় ।
             </p>
             <p class="text-base font-normal text-black opacity-50">
-                <span class="text-lg font-semibold">innerText : </span>এটি  ব্যবহার করে একটি এলিমেন্টের দৃশ্যমান টেস্ট এর এক্সেস নেওয়া যায় যা দিয়ে দৃশ্যমান text পরিবর্তন করা যায় এটি হিডেন টেস্ট এর এক্সেস নিতে পারেনা
+                <span class="text-lg font-semibold">innerText : </span>এটি  ব্যবহার করে একটি এলিমেন্টের দৃশ্যমান টেস্ট এর এক্সেস নেওয়া যায় যা দিয়ে দৃশ্যমান text পরিবর্তন করা যায় এটি হিডেন টেস্ট এর এক্সেস নিতে পারেনা।
             </p>
             <p class="text-base font-normal text-black opacity-50">
-                <span class="text-lg font-semibold">textContent :</span>এর কাজ innerText মতোই কিন্তু এটি  দৃশ্যমান text পাশাপাশি  hidden text এর এক্সেস নিতে পারে 
+                <span class="text-lg font-semibold">textContent :</span>এর কাজ innerText মতোই কিন্তু এটি  দৃশ্যমান text পাশাপাশি  hidden text এর এক্সেস নিতে পারে।
             </p>
         </div>
         
@@ -138,7 +139,11 @@
                 </h1>
                </div>
                
-            <p class="mt-2 text-lg font-normal text-black opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum optio ea illo! Impedit minima quo inventore, ducimus ea deserunt ipsam eligendi sint iste error dolore modi provident harum molestias consectetur officiis accusantium repudiandae animi vel ab ratione? Ut ratione dolorem, sint impedit rerum id ex natus obcaecati architecto et!</p>
+            <p class="pt-2 text-base font-normal text-black opacity-50"><span class="text-lg font-semibold">Event Delegation:</span> এটি এমন একটি টেকনিক যা দিয়ে শুধুমাত্র একটি প্যারেন্ট এলিমেন্টে ইভেন্ট হ্যান্ডলার যোগ করে তার সকল চাইল্ড এলিমেন্টের ইভেন্ট হ্যান্ডেল করা যায়।</p>
+            
+           <p class="pt-1 title">Event Delegation যেভাবে কাজ করে</p>
+           <p class="text-base font-normal text-black opacity-50">ধরা যাক, আমাদের একটি লিস্ট আছে যার মধ্যে অনেক আইটেম রয়েছে। সাধারণত, প্রতিটি আইটেমে ক্লিক করার জন্য আলাদা আলাদা ইভেন্ট হ্যান্ডলার লাগতো। তবে Event Delegation ব্যবহার করে আমরা শুধু লিস্টের প্যারেন্ট এলিমেন্টে একটিই ইভেন্ট হ্যান্ডলার যোগ করলে, সেই প্যারেন্ট এলিমেন্টের মাধ্যমে লিস্টের সকল আইটেমের ক্লিক ইভেন্ট হ্যান্ডেল করতে পারব।</p>
+            
         </div>
         <!-- 4th -->
         <div class=" p-3 mx-auto  rounded-md max-w-7xl box-border  bg-white  border-[#080808] box  border border-opacity-15 mb-6">
@@ -146,7 +151,13 @@
                 <h1 class="text-xl font-semibold ">Question-4: What is event bubbling in the DOM?</h1>
                </div>
             
-            <p class="mt-2 text-lg font-normal text-black opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum optio ea illo! Impedit minima quo inventore, ducimus ea deserunt ipsam eligendi sint iste error dolore modi provident harum molestias consectetur officiis accusantium repudiandae animi vel ab ratione? Ut ratione dolorem, sint impedit rerum id ex natus obcaecati architecto et!</p>
+            <p class="mt-2 text-lg font-normal text-black opacity-50">
+                Event Bubbling হলো DOM Event এর একটি প্রক্রিয়া যেখানে যখন কোনো ইভেন্ট চাইল্ড এলিমেন্টে ঘটে, তখন সেটি প্যারেন্ট এলিমেন্টে উঠে যায়। অর্থাৎ, ইভেন্টটি প্রথমে চাইল্ড এলিমেন্টে ঘটে এবং পরে প্যারেন্ট এলিমেন্টে পৌঁছায় এটিকে Event Bubbling বলা হয়।</p>
+                
+                <p class="pt-1 title">Event Bubbling যেভাবে কাজ করে
+                </p>
+                
+                <p class="text-base font-normal text-black opacity-50">ধরা যাক, আমাদের একটি div এর ভিতরে একটি button এলিমেন্ট আছে। যদি আমরা button-এ ক্লিক করি, তখন ক্লিক ইভেন্টটি প্রথমে button "চাইল্ড এলিমেন্ট" এ ঘটবে এবং পরে div "প্যারেন্ট এলিমেন্ট" এ পৌঁছে যাবে। এইভাবে ইভেন্টটি উপরের দিকে Bubble করবে।</p>
         </div>
         <!-- 5th -->
         <div class=" p-3 mx-auto  rounded-md max-w-7xl box-border  bg-white  border-[#080808] box  border border-opacity-15 mb-6">
@@ -154,7 +165,32 @@
                 <h1 class="text-xl font-semibold ">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
                </div>
             
-            <p class="mt-2 text-lg font-normal text-black opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum optio ea illo! Impedit minima quo inventore, ducimus ea deserunt ipsam eligendi sint iste error dolore modi provident harum molestias consectetur officiis accusantium repudiandae animi vel ab ratione? Ut ratione dolorem, sint impedit rerum id ex natus obcaecati architecto et!</p>
+            <p class="title">JavaScript দিয়ে HTML ডকুমেন্টে নতুন এলিমেন্ট তৈরি করা, যোগ করা এবং মুছে ফেলার  পদ্ধতি :</p>
+            
+            <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">document.createElement()</summary>
+                <p>
+                    নতুন এলিমেন্ট তৈরি করতে document.createElement() মেথড ব্যবহার করা হয়। এটি একটি নতুন HTML এলিমেন্ট তৈরি করে।
+                </p>
+              </details>
+            
+              <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">appendChild()</summary>
+                <p>
+                    তৈরি করা এলিমেন্টটি ডকুমেন্টে যোগ করতে appendChild() মেথড ব্যবহার করা হয়। এটি প্যারেন্ট এলিমেন্টের মধ্যে নতুন এলিমেন্টটি যোগ করে।
+
+                </p>
+              </details>
+            
+              <details class="text-base font-normal text-black opacity-50">
+                <summary class="summary">removeChild() </summary>
+                <p>
+                    যেকোনো এলিমেন্ট মুছে ফেলতে removeChild() মেথড ব্যবহার করা হয়। এটি প্যারেন্ট এলিমেন্ট থেকে নির্দিষ্ট এলিমেন্টটি মুছে ফেলে।
+                </p>
+              </details>
+            
+            
+            
         </div>
      </section>
     
